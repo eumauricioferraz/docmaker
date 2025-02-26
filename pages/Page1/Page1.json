@@ -1,11 +1,10 @@
 {
-  "gitSyncId": "67bf9c4019365b0caed50b71_c57dfd52-d3fd-49b6-ab2b-ac79f38fd2fa",
   "unpublishedPage": {
     "layouts": [
       {
         "dsl": {
           "backgroundColor": "none",
-          "bottomRow": 5000,
+          "bottomRow": 820,
           "canExtend": true,
           "containerStyle": "none",
           "detachFromLayout": true,
@@ -15,18 +14,661 @@
           "minHeight": 1292,
           "parentColumnSpace": 1,
           "parentRowSpace": 1,
-          "rightColumn": 4896,
+          "rightColumn": 1264,
           "snapColumns": 64,
           "snapRows": 124,
           "topRow": 0,
           "type": "CANVAS_WIDGET",
           "version": 92,
           "widgetId": "0",
-          "widgetName": "MainContainer"
+          "widgetName": "MainContainer",
+          "children": [
+            {
+              "backgroundColor": "#FFFFFF",
+              "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+              "widgetName": "Container1",
+              "type": "CONTAINER_WIDGET",
+              "animateLoading": true,
+              "dynamicBindingPathList": [
+                {"key": "boxShadow"}
+              ],
+              "leftColumn": 0,
+              "rightColumn": 64,
+              "topRow": 0,
+              "bottomRow": 12,
+              "parentId": "0",
+              "widgetId": "header_container",
+              "containerStyle": "card",
+              "children": [
+                {
+                  "widgetName": "Text1",
+                  "type": "TEXT_WIDGET",
+                  "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+                  "dynamicBindingPathList": [
+                    {"key": "fontFamily"},
+                    {"key": "borderRadius"}
+                  ],
+                  "leftColumn": 1,
+                  "rightColumn": 41,
+                  "topRow": 1,
+                  "bottomRow": 5,
+                  "parentId": "header_container",
+                  "widgetId": "title_text",
+                  "text": "Document Generator",
+                  "fontSize": "1.875rem",
+                  "textAlign": "LEFT"
+                },
+                {
+                  "widgetName": "Text2",
+                  "type": "TEXT_WIDGET",
+                  "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+                  "dynamicBindingPathList": [
+                    {"key": "fontFamily"},
+                    {"key": "borderRadius"}
+                  ],
+                  "leftColumn": 1,
+                  "rightColumn": 41,
+                  "topRow": 5,
+                  "bottomRow": 9,
+                  "parentId": "header_container",
+                  "widgetId": "subtitle_text",
+                  "text": "Generate printable documents from structured data and templates",
+                  "textAlign": "LEFT"
+                }
+              ]
+            },
+            {
+              "backgroundColor": "#FFFFFF",
+              "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+              "widgetName": "Container2",
+              "type": "CONTAINER_WIDGET",
+              "animateLoading": true,
+              "dynamicBindingPathList": [
+                {"key": "boxShadow"}
+              ],
+              "leftColumn": 0,
+              "rightColumn": 32,
+              "topRow": 13,
+              "bottomRow": 82,
+              "parentId": "0",
+              "widgetId": "data_input_container",
+              "containerStyle": "card",
+              "children": [
+                {
+                  "widgetName": "Text3",
+                  "type": "TEXT_WIDGET",
+                  "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+                  "dynamicBindingPathList": [
+                    {"key": "fontFamily"},
+                    {"key": "borderRadius"}
+                  ],
+                  "leftColumn": 1,
+                  "rightColumn": 31,
+                  "topRow": 1,
+                  "bottomRow": 5,
+                  "parentId": "data_input_container",
+                  "widgetId": "data_input_title",
+                  "text": "1. Input Data",
+                  "fontSize": "1.25rem",
+                  "textAlign": "LEFT"
+                },
+                {
+                  "widgetName": "Tabs1",
+                  "type": "TABS_WIDGET",
+                  "leftColumn": 1,
+                  "rightColumn": 31,
+                  "topRow": 5,
+                  "bottomRow": 65,
+                  "parentId": "data_input_container",
+                  "widgetId": "data_input_tabs",
+                  "tabs": [
+                    {
+                      "id": "tab1",
+                      "label": "JSON Editor",
+                      "widgetId": "json_tab"
+                    },
+                    {
+                      "id": "tab2",
+                      "label": "Upload File",
+                      "widgetId": "file_tab"
+                    },
+                    {
+                      "id": "tab3",
+                      "label": "Sample Data",
+                      "widgetId": "sample_tab"
+                    }
+                  ],
+                  "defaultTab": "tab1",
+                  "children": [
+                    {
+                      "widgetName": "Canvas1",
+                      "type": "CANVAS_WIDGET",
+                      "leftColumn": 0,
+                      "rightColumn": 30,
+                      "topRow": 0,
+                      "bottomRow": 55,
+                      "parentId": "data_input_tabs",
+                      "widgetId": "json_canvas",
+                      "tabId": "tab1",
+                      "children": [
+                        {
+                          "widgetName": "JSONForm1",
+                          "type": "JSON_FORM_WIDGET",
+                          "leftColumn": 0,
+                          "rightColumn": 30,
+                          "topRow": 0,
+                          "bottomRow": 55,
+                          "parentId": "json_canvas",
+                          "widgetId": "json_form",
+                          "dynamicBindingPathList": [],
+                          "sourceData": "{}",
+                          "autoGenerateForm": false,
+                          "fieldLimitExceeded": false,
+                          "jsonFormData": {
+                            "name": "",
+                            "age": 0,
+                            "dob": "",
+                            "address": {
+                              "street": "",
+                              "city": "",
+                              "state": "",
+                              "zip": ""
+                            },
+                            "items": [
+                              {
+                                "description": "",
+                                "quantity": 0,
+                                "price": 0
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "widgetName": "Canvas2",
+                      "type": "CANVAS_WIDGET",
+                      "leftColumn": 0,
+                      "rightColumn": 30,
+                      "topRow": 0,
+                      "bottomRow": 55,
+                      "parentId": "data_input_tabs",
+                      "widgetId": "file_canvas",
+                      "tabId": "tab2",
+                      "children": [
+                        {
+                          "widgetName": "FilePicker1",
+                          "type": "FILE_PICKER_WIDGET",
+                          "leftColumn": 0,
+                          "rightColumn": 30,
+                          "topRow": 1,
+                          "bottomRow": 5,
+                          "parentId": "file_canvas",
+                          "widgetId": "file_upload",
+                          "dynamicBindingPathList": [],
+                          "allowedFileTypes": ["application/json", "text/csv"],
+                          "label": "Upload Data (JSON or CSV)",
+                          "maxFileSize": 5,
+                          "isRequired": false,
+                          "onFilesSelected": "{{parseUploadedFile.trigger()}}"
+                        },
+                        {
+                          "widgetName": "Text4",
+                          "type": "TEXT_WIDGET",
+                          "leftColumn": 0,
+                          "rightColumn": 30,
+                          "topRow": 6,
+                          "bottomRow": 9,
+                          "parentId": "file_canvas",
+                          "widgetId": "file_info_text",
+                          "text": "Supported file types: JSON and CSV (max 5MB)",
+                          "textStyle": "BODY",
+                          "textAlign": "LEFT"
+                        },
+                        {
+                          "widgetName": "JSONEditor1",
+                          "type": "JSON_EDITOR_WIDGET",
+                          "leftColumn": 0,
+                          "rightColumn": 30,
+                          "topRow": 10,
+                          "bottomRow": 55,
+                          "parentId": "file_canvas",
+                          "widgetId": "uploaded_data_preview",
+                          "dynamicBindingPathList": [],
+                          "defaultValue": "{{parseUploadedFile.data}}",
+                          "label": "Parsed Data Preview"
+                        }
+                      ]
+                    },
+                    {
+                      "widgetName": "Canvas3",
+                      "type": "CANVAS_WIDGET",
+                      "leftColumn": 0,
+                      "rightColumn": 30,
+                      "topRow": 0,
+                      "bottomRow": 55,
+                      "parentId": "data_input_tabs",
+                      "widgetId": "sample_canvas",
+                      "tabId": "tab3",
+                      "children": [
+                        {
+                          "widgetName": "Select1",
+                          "type": "SELECT_WIDGET",
+                          "leftColumn": 0,
+                          "rightColumn": 30,
+                          "topRow": 1,
+                          "bottomRow": 5,
+                          "parentId": "sample_canvas",
+                          "widgetId": "sample_data_select",
+                          "dynamicBindingPathList": [],
+                          "label": "Select Sample Data",
+                          "options": [
+                            {
+                              "label": "Invoice",
+                              "value": "invoice"
+                            },
+                            {
+                              "label": "Resume/CV",
+                              "value": "resume"
+                            },
+                            {
+                              "label": "Event Ticket",
+                              "value": "ticket"
+                            },
+                            {
+                              "label": "Certificate",
+                              "value": "certificate"
+                            }
+                          ],
+                          "defaultOptionValue": "invoice",
+                          "onOptionChange": "{{loadSampleData.trigger()}}"
+                        },
+                        {
+                          "widgetName": "JSONEditor2",
+                          "type": "JSON_EDITOR_WIDGET",
+                          "leftColumn": 0,
+                          "rightColumn": 30,
+                          "topRow": 6,
+                          "bottomRow": 55,
+                          "parentId": "sample_canvas",
+                          "widgetId": "sample_data_preview",
+                          "dynamicBindingPathList": [],
+                          "defaultValue": "{{loadSampleData.data}}",
+                          "label": "Sample Data Preview"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "backgroundColor": "#FFFFFF",
+              "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+              "widgetName": "Container3",
+              "type": "CONTAINER_WIDGET",
+              "animateLoading": true,
+              "dynamicBindingPathList": [
+                {"key": "boxShadow"}
+              ],
+              "leftColumn": 32,
+              "rightColumn": 64,
+              "topRow": 13,
+              "bottomRow": 82,
+              "parentId": "0",
+              "widgetId": "template_container",
+              "containerStyle": "card",
+              "children": [
+                {
+                  "widgetName": "Text5",
+                  "type": "TEXT_WIDGET",
+                  "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+                  "dynamicBindingPathList": [
+                    {"key": "fontFamily"},
+                    {"key": "borderRadius"}
+                  ],
+                  "leftColumn": 1,
+                  "rightColumn": 31,
+                  "topRow": 1,
+                  "bottomRow": 5,
+                  "parentId": "template_container",
+                  "widgetId": "template_title",
+                  "text": "2. Select Template",
+                  "fontSize": "1.25rem",
+                  "textAlign": "LEFT"
+                },
+                {
+                  "widgetName": "Tabs2",
+                  "type": "TABS_WIDGET",
+                  "leftColumn": 1,
+                  "rightColumn": 31,
+                  "topRow": 5,
+                  "bottomRow": 65,
+                  "parentId": "template_container",
+                  "widgetId": "template_tabs",
+                  "tabs": [
+                    {
+                      "id": "tab1",
+                      "label": "Built-in Templates",
+                      "widgetId": "builtin_tab"
+                    },
+                    {
+                      "id": "tab2",
+                      "label": "Custom Template",
+                      "widgetId": "custom_tab"
+                    }
+                  ],
+                  "defaultTab": "tab1",
+                  "children": [
+                    {
+                      "widgetName": "Canvas4",
+                      "type": "CANVAS_WIDGET",
+                      "leftColumn": 0,
+                      "rightColumn": 30,
+                      "topRow": 0,
+                      "bottomRow": 55,
+                      "parentId": "template_tabs",
+                      "widgetId": "builtin_canvas",
+                      "tabId": "tab1",
+                      "children": [
+                        {
+                          "widgetName": "List1",
+                          "type": "LIST_WIDGET",
+                          "leftColumn": 0,
+                          "rightColumn": 30,
+                          "topRow": 0,
+                          "bottomRow": 55,
+                          "parentId": "builtin_canvas",
+                          "widgetId": "template_list",
+                          "dynamicBindingPathList": [],
+                          "itemSpacing": "1rem",
+                          "template": {
+                            "image": {
+                              "widgetName": "Image1",
+                              "type": "IMAGE_WIDGET",
+                              "leftColumn": 0,
+                              "rightColumn": 4,
+                              "topRow": 0,
+                              "bottomRow": 4,
+                              "widgetId": "template_image",
+                              "imageShape": "SQUARE",
+                              "dynamicBindingPathList": [
+                                {"key": "imageSrc"}
+                              ],
+                              "imageSrc": "{{currentItem.icon}}"
+                            },
+                            "text": {
+                              "widgetName": "Text6",
+                              "type": "TEXT_WIDGET",
+                              "leftColumn": 4,
+                              "rightColumn": 14,
+                              "topRow": 0,
+                              "bottomRow": 2,
+                              "widgetId": "template_name",
+                              "dynamicBindingPathList": [
+                                {"key": "text"}
+                              ],
+                              "text": "{{currentItem.name}}",
+                              "fontSize": "1rem",
+                              "textAlign": "LEFT"
+                            },
+                            "text2": {
+                              "widgetName": "Text7",
+                              "type": "TEXT_WIDGET",
+                              "leftColumn": 4,
+                              "rightColumn": 24,
+                              "topRow": 2,
+                              "bottomRow": 4,
+                              "widgetId": "template_desc",
+                              "dynamicBindingPathList": [
+                                {"key": "text"}
+                              ],
+                              "text": "{{currentItem.description}}",
+                              "textStyle": "BODY",
+                              "textAlign": "LEFT"
+                            },
+                            "button": {
+                              "widgetName": "Button1",
+                              "type": "BUTTON_WIDGET",
+                              "leftColumn": 24,
+                              "rightColumn": 30,
+                              "topRow": 1,
+                              "bottomRow": 3,
+                              "widgetId": "select_template_btn",
+                              "dynamicBindingPathList": [],
+                              "text": "Select",
+                              "onClick": "{{selectTemplate.trigger({template: currentItem.id})}}"
+                            }
+                          },
+                          "title": "Available Templates",
+                          "listData": [
+                            {
+                              "id": "invoice",
+                              "name": "Invoice",
+                              "description": "Standard invoice template with company info, line items, and totals",
+                              "icon": "https://assets.appsmith.com/widgets/icon_invoice.svg"
+                            },
+                            {
+                              "id": "receipt",
+                              "name": "Receipt",
+                              "description": "Simple receipt with transaction details and payment information",
+                              "icon": "https://assets.appsmith.com/widgets/icon_receipt.svg"
+                            },
+                            {
+                              "id": "certificate",
+                              "name": "Certificate",
+                              "description": "Award or achievement certificate with customizable fields",
+                              "icon": "https://assets.appsmith.com/widgets/icon_certificate.svg"
+                            },
+                            {
+                              "id": "report",
+                              "name": "Report",
+                              "description": "Structured report with sections, tables, and charts",
+                              "icon": "https://assets.appsmith.com/widgets/icon_report.svg"
+                            },
+                            {
+                              "id": "letter",
+                              "name": "Business Letter",
+                              "description": "Formal business letter with letterhead and signature",
+                              "icon": "https://assets.appsmith.com/widgets/icon_letter.svg"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "widgetName": "Canvas5",
+                      "type": "CANVAS_WIDGET",
+                      "leftColumn": 0,
+                      "rightColumn": 30,
+                      "topRow": 0,
+                      "bottomRow": 55,
+                      "parentId": "template_tabs",
+                      "widgetId": "custom_canvas",
+                      "tabId": "tab2",
+                      "children": [
+                        {
+                          "widgetName": "RichTextEditor1",
+                          "type": "RICH_TEXT_EDITOR_WIDGET",
+                          "leftColumn": 0,
+                          "rightColumn": 30,
+                          "topRow": 0,
+                          "bottomRow": 55,
+                          "parentId": "custom_canvas",
+                          "widgetId": "custom_template_editor",
+                          "dynamicBindingPathList": [],
+                          "defaultText": "<h1>{{data.title}}</h1>\n<p>Hello {{data.name}},</p>\n<p>This is a custom template. You can use mustache syntax like {{data.field}} to insert data.</p>\n<p>Add your custom template here...</p>",
+                          "inputType": "html",
+                          "label": "Custom HTML Template",
+                          "isToolbarHidden": false
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "backgroundColor": "#FFFFFF",
+              "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+              "widgetName": "Container4",
+              "type": "CONTAINER_WIDGET",
+              "animateLoading": true,
+              "dynamicBindingPathList": [
+                {"key": "boxShadow"}
+              ],
+              "leftColumn": 0,
+              "rightColumn": 64,
+              "topRow": 83,
+              "bottomRow": 105,
+              "parentId": "0",
+              "widgetId": "preview_container",
+              "containerStyle": "card",
+              "children": [
+                {
+                  "widgetName": "Text8",
+                  "type": "TEXT_WIDGET",
+                  "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+                  "dynamicBindingPathList": [
+                    {"key": "fontFamily"},
+                    {"key": "borderRadius"}
+                  ],
+                  "leftColumn": 1,
+                  "rightColumn": 31,
+                  "topRow": 1,
+                  "bottomRow": 5,
+                  "parentId": "preview_container",
+                  "widgetId": "preview_title",
+                  "text": "3. Preview & Generate",
+                  "fontSize": "1.25rem",
+                  "textAlign": "LEFT"
+                },
+                {
+                  "widgetName": "Button2",
+                  "type": "BUTTON_WIDGET",
+                  "leftColumn": 52,
+                  "rightColumn": 63,
+                  "topRow": 1,
+                  "bottomRow": 5,
+                  "parentId": "preview_container",
+                  "widgetId": "generate_btn",
+                  "dynamicBindingPathList": [],
+                  "text": "Generate Document",
+                  "buttonVariant": "PRIMARY",
+                  "onClick": "{{generateDocument.trigger()}}"
+                },
+                {
+                  "widgetName": "Divider1",
+                  "type": "DIVIDER_WIDGET",
+                  "leftColumn": 0,
+                  "rightColumn": 64,
+                  "topRow": 5,
+                  "bottomRow": 6,
+                  "parentId": "preview_container",
+                  "widgetId": "divider1"
+                },
+                {
+                  "widgetName": "DocumentViewer",
+                  "type": "IFRAME_WIDGET",
+                  "leftColumn": 0,
+                  "rightColumn": 64,
+                  "topRow": 6,
+                  "bottomRow": 20,
+                  "parentId": "preview_container",
+                  "widgetId": "document_preview",
+                  "dynamicBindingPathList": [
+                    {"key": "srcDoc"}
+                  ],
+                  "srcDoc": "{{generateDocument.data}}",
+                  "borderWidth": "1px",
+                  "borderRadius": "0px"
+                }
+              ]
+            },
+            {
+              "backgroundColor": "#FFFFFF",
+              "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+              "widgetName": "Container5",
+              "type": "CONTAINER_WIDGET",
+              "animateLoading": true,
+              "dynamicBindingPathList": [
+                {"key": "boxShadow"}
+              ],
+              "leftColumn": 0,
+              "rightColumn": 64,
+              "topRow": 106,
+              "bottomRow": 116,
+              "parentId": "0",
+              "widgetId": "actions_container",
+              "containerStyle": "card",
+              "children": [
+                {
+                  "widgetName": "Text9",
+                  "type": "TEXT_WIDGET",
+                  "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+                  "dynamicBindingPathList": [
+                    {"key": "fontFamily"},
+                    {"key": "borderRadius"}
+                  ],
+                  "leftColumn": 1,
+                  "rightColumn": 31,
+                  "topRow": 1,
+                  "bottomRow": 5,
+                  "parentId": "actions_container",
+                  "widgetId": "actions_title",
+                  "text": "4. Export & Download",
+                  "fontSize": "1.25rem",
+                  "textAlign": "LEFT"
+                },
+                {
+                  "widgetName": "Button3",
+                  "type": "BUTTON_WIDGET",
+                  "leftColumn": 33,
+                  "rightColumn": 43,
+                  "topRow": 2,
+                  "bottomRow": 6,
+                  "parentId": "actions_container",
+                  "widgetId": "print_btn",
+                  "dynamicBindingPathList": [],
+                  "text": "Print Document",
+                  "buttonVariant": "SECONDARY",
+                  "onClick": "{{printDocument.trigger()}}"
+                },
+                {
+                  "widgetName": "Button4",
+                  "type": "BUTTON_WIDGET",
+                  "leftColumn": 43,
+                  "rightColumn": 53,
+                  "topRow": 2,
+                  "bottomRow": 6,
+                  "parentId": "actions_container",
+                  "widgetId": "pdf_btn",
+                  "dynamicBindingPathList": [],
+                  "text": "Download PDF",
+                  "buttonVariant": "SECONDARY",
+                  "onClick": "{{downloadPDF.trigger()}}"
+                },
+                {
+                  "widgetName": "Button5",
+                  "type": "BUTTON_WIDGET",
+                  "leftColumn": 53,
+                  "rightColumn": 63,
+                  "topRow": 2,
+                  "bottomRow": 6,
+                  "parentId": "actions_container",
+                  "widgetId": "html_btn",
+                  "dynamicBindingPathList": [],
+                  "text": "Download HTML",
+                  "buttonVariant": "SECONDARY",
+                  "onClick": "{{downloadHTML.trigger()}}"
+                }
+              ]
+            }
+          ]
         }
       }
     ],
-    "name": "Page1",
-    "slug": "page1"
+    "name": "Document Generator",
+    "slug": "document-generator"
   }
 }
